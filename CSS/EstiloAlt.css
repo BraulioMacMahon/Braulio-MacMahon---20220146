@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+
+
+.cabecalho{
+    
+        
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+        
+}
+
+.logo img{
+    width: 15%;
+    
+}
+

@@ -1,0 +1,577 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+
+
+    .cabecalho{
+    
+        font-family: "Nunito", sans-serif;
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: aqua;
+        
+    }
+    .cabecalho::after{
+        width: 100%;
+        height:110%;
+        content: '';
+        background-color: rgba(000, 000, 000, .40);
+        position: absolute;
+    }
+    
+    
+    
+    .logo img{
+        width: 15%;
+        display: flex;
+        color: white;
+        left: 10%;
+        top: 5%;
+        position: absolute;
+        opacity: 90%;
+        z-index: 3;
+        opacity: 0;   
+        transform: translateX(-40%);
+        transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+    
+    .logo img.visible{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+    .menu {
+        width: 60%;
+        height: 10%;
+        align-items: center;
+        backdrop-filter: blur(0.5rem);
+        box-shadow: 0% 0% 30px rgba(227, 228, 237, 0.37);
+        border: 2px solid rgba(255, 255, 255, 0.04);
+        position: absolute;
+        z-index: 2;
+        opacity: 0%;
+        transform: translateX(40%);
+        transition: opacity 0.5s ease, transform 1.5s ease;
+        border-radius: 2rem;
+        top: 8.5%;
+        left: 23%;
+        
+        
+    }
+    
+    .menu.visible {
+        opacity: 100%;
+        transform: translateX(0%); 
+    }
+    
+    .ul-menu {
+        list-style-type: none;
+        font-weight: bold;
+        padding: 2% 0% 0% 3%;
+        
+        
+    }
+    
+    .menu ul li{
+        display: inline-block;
+        padding: 0% 0% 0% 5%;
+    }
+    
+    .menu ul li a{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 140%;
+        padding: 0% 0% 0% 0%;
+        text-decoration: none;
+        
+    }
+    
+    
+    
+    .menu ul li a:hover {
+        color: #008fe4; 
+        transform: scale(1.1);
+        opacity: 70%;
+    }
+    
+    .fundo img{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-image: fill 0 linear-gradient(#0003, #000);
+        
+    }
+    
+    .texto-cabecalho {
+        position: absolute;
+        color: white;
+        z-index: 1;
+        font-size: 120%;
+        align-items: center;
+        top: 50%;
+        left: 15%;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(40%);
+        transition: opacity 0.5s ease, transform 1.5s ease;
+    }
+    .texto-cabecalho.visible{
+        opacity: 1;
+        transform: translateY(0%); 
+    }
+    
+    .cabecalho-icones{
+        position: absolute;
+        display: flex;
+        top: 90%;
+        left: 82%;
+        opacity: 0;   
+        transform: translateY(40%);
+        transition: opacity 1.5s ease, transform 2.5s ease;
+        z-index: 1;
+        
+    }
+    
+    .cabecalho-icones.visible{
+        opacity: 1;
+        transform: translateY(0%); 
+    }
+    
+    
+    
+    .facebook{
+        padding: 00% 15% 0% 0%;
+        
+    }
+    .instagram{
+        padding: 0% 15% 0% 0%;
+    }
+    .youtube{
+        padding: 0% 0% 0% 0%;
+    }
+    
+    .facebook:hover { 
+        transform: scale(1.5);
+    }
+    .instagram:hover{
+        transform: scale(1.5);
+    }
+    .youtube:hover{
+        transform: scale(1.5);
+    }
+    
+    
+    
+    
+    .separador-pri{
+        width: 100%;
+        height: 8rem;
+        position: relative;
+        background-image: url("../Imagens/separador1.png");
+        background-repeat: repeat-x;
+        bottom: 5.8rem;
+        
+    }
+    .separador-1{
+        width: 100%;
+        height: 6rem;
+        position: relative;
+        background-image: url("../Imagens/separador1.png");
+        background-repeat: repeat-x;
+        
+    }
+    .separador-2{
+        width: 100%;
+        height:6rem;
+        position: relative;
+        background-image: url("../Imagens/separador2.png");
+        background-repeat: repeat-x;
+        
+    }
+    .separador-rodape{
+        width: 100%;
+        height: 6rem;
+        top: 154rem;
+        position: absolute;
+        
+        background-image: url("../Imagens/separador_rodape.png");
+        z-index: 1;
+    }
+    
+    .banner{
+        background-color: #ffffff;
+        width: 100%;
+        height: 30rem;
+        font-family: "Nunito", sans-serif;
+        color: #333333;
+        display: flex;
+        padding: 2rem 0rem 0rem 0rem;
+        
+    }
+    
+    .txt-banner1{
+        padding: 4rem 0rem 0rem 11rem;
+    }
+    
+    .txt-banner1 h1{
+        font-size: 2rem;
+        font-weight: bold;
+    
+    }
+    .txt-banner1 h2{
+        font-size: 1.2rem;
+    }
+    
+    .pc{
+        
+        left: 45rem;
+        opacity: 0;
+        transform: translateY(25%);
+        transition: opacity 2s ease, transform 2.5s ease;
+        
+    }
+    
+    .pc.visible{
+        opacity: 1;
+        transform: translateY(0%); 
+    }
+    
+    .pc .banner-img-1 ,
+    .pc .banner-img-2 {
+        top: 1rem;
+        
+    }
+    
+    .pc img{
+        position: absolute;
+        
+    }
+    
+    .pc .banner-img-1 .img-1{
+        z-index: 1;
+        left: 1rem;
+        width: 25rem;
+    }
+    .pc .banner-img-1 .img-2{
+        z-index: 0;
+        width: 20.2rem; /*Largura*/
+        height: 13.5rem;  /*altura*/
+        top: 1rem;
+        left: 3.4rem;
+        
+    }
+    
+    .pc .banner-img-2 .img-1{
+        z-index: 1;
+        width: 36.25rem; /*largura*/
+        height: 10rem; /*altura*/
+        width: 25rem;
+        top:17.7rem;
+        left: 1.2rem;
+    }
+    .pc .banner-img-2 .img-2{
+        z-index: 0;
+        width: 20.2rem; /*largura*/
+        height: 7.7rem; /*altura*/
+        top: 19.8rem;
+        left: 3.5rem;
+        position: absolute;
+        border-image: fill 0 linear-gradient(#0003, #000);
+        
+    }
+    .pc .banner-img-2{
+        opacity: 30%;
+    }
+    
+    
+    
+    
+    .detalhe-1{
+        position: absolute;
+        
+        
+    }
+    .detalhe-1 .chape-reto img{
+        width: 70%;
+    }
+    
+    
+    .detalhe-2 .chape-curvo img{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        left: 87%;
+      top: 65rem;
+       
+    }
+    
+    
+    .banner-2{
+        width: 100%;
+        height: 35rem;
+    }
+    
+    .banner-2-txt{
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity 2.5s ease, transform 1.5s ease;
+        z-index: 1;
+        
+    }
+    
+    .banner-2-txt.visible{
+        opacity: 1;
+        transform: translateX(0%); 
+    }
+    
+    .banner-2 h1{
+        position: absolute;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.7rem;
+        top: 9rem;
+        left: 8rem;
+        
+    }
+    
+    
+    
+    .lista-servicos{
+        position: absolute;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.4rem;
+        top: 12rem;
+        left: 12rem;
+        
+    }
+    
+    .banner-botao{
+        display: flex; 
+        position: absolute;
+        top: 120rem;
+        left: 40%;
+    }
+    .banner-botao button{
+        padding: 1rem 5rem 1rem 5rem;
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.5rem;
+        background-color: #333333;
+        border-radius: 2rem;
+        border: none;
+        z-index: 1;
+    }
+    .banner-botao{
+        opacity: 0;
+        transform: translateY(50%);
+        transition: opacity 0.5s ease, transform 1.5s ease;
+        z-index: 1;
+      
+    }
+    
+    .banner-botao.visible{
+      opacity: 1;
+      transform: translateY(0%); 
+    }
+    
+    .detalhe2 img{
+        position: absolute;
+        width: 20rem;
+        top: 118rem;
+    
+    }
+    
+    
+    
+    .banner-3{
+        width: 100%;
+        position: relative;
+        
+    
+    }
+    
+    .banner-3 img{
+        position: relative;
+        width: 55%;
+        height: auto;
+        left: 22rem;
+    
+    }
+    
+    .rodape{
+        background-color: aqua;
+        width: 100%;
+        height: 32.96rem;
+        position: relative;
+        align-items: center;
+    }
+    
+    
+    .escritas{
+        position: relative;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        bottom: 20rem;
+        z-index: 1;
+        
+    }
+    
+    
+    .endereco{
+        font-size: 0.9rem;
+        position: relative;
+        width: 35rem;
+        bottom: 9rem;
+        left: 8rem;
+    }
+    
+    .contactos{
+        position: relative;
+        left: 4rem;
+        bottom: 5rem;
+        width: 25rem;
+    }
+    
+    .email{
+        position: relative;
+        display: flex;
+    }
+    .email svg{
+        position: relative;
+        left: 5rem;
+        bottom: 4rem;
+        font-size: 1rem;
+        width: 1.5rem;
+    }
+    .email p{
+        position: relative;
+        left: 5.5rem;
+        bottom: 4rem;
+        font-size: 1rem;
+        width: 5rem;
+    }
+    
+    
+    .telefone{
+        position: relative;
+        display: flex;
+    }
+    .telefone svg{
+        position: relative;
+        left: 5rem;
+        font-size: 1rem;
+        width: 1.5rem;
+    }
+    .telefone p{
+        position: relative;
+        font-size: 1rem;
+        left: 5.5rem;
+       
+    }
+    
+    .whatsapp{
+        position: relative;
+        display: flex;
+    }
+    .whatsapp svg{
+        position: relative;
+        left: 5rem;
+        bottom: 0.6rem;
+        font-size: 1rem;
+        width: 1.5rem;
+    }
+    .whatsapp p{
+        position: relative;
+        font-size: 1rem;
+        left: 5.5rem;
+        bottom: 0.4rem;
+       
+    }
+    
+    
+    .detalhe_redape img{
+        width: 20rem;
+    }
+    .detalhe_redape{
+        
+        position: absolute;
+        display: flex;
+        top: 29rem;
+        left: 12rem;
+        
+    }
+    
+    .logo_rodape img{
+        width: 20rem;
+    }
+    .logo_rodape img{
+        position: absolute;
+        display: flex;
+        top: 31rem;
+        left:25rem;
+    }
+    .i{
+        position: absolute;
+        display: flex;
+        top: 32rem;
+        left:48rem;
+        font-size: 2rem;
+        width: 2rem;
+    }
+    .dizeres{
+        position: absolute;
+        display: flex;
+        top: 35.90rem;
+        left:50rem;
+        font-size: 1rem;
+        width: 22rem;
+    }
+    .barra_fim{
+        position: relative;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        bottom: 40rem;
+        z-index: 1;
+        
+    }
+    
+    .rodape-icones{
+        position: absolute;
+        display: flex;
+        top: 25rem;
+        left:69rem;
+        font-size: 1rem;
+        width: 5rem;
+        
+    }
+    
+    
+    
+    
+    .fundo_rodape img{
+        position: relative;
+        width: 100%;
+        height: 32.96rem;
+        z-index: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
