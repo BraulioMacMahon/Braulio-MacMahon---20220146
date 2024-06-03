@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ul{
+    padding: 0px! important;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color:dodgerblue;
+    height: 3cap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icones ul li{
+    list-style: none;
+    display: inline;
+    padding: 0.5%;
+    float: right;
+    
+}
+
+.icones ul li a img{
+    width: 100%; 
+}
+
+
+.main-2{
+    width: 100%;
+    height: 6cap;
+    border-bottom: 3px solid rgb(236, 236, 236);
+    align-items: center;
+}
+
+.header-2{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.logo{
+    width: 5%;
+    float: left;
+    position: relative;
+    bottom: 13px;
+}
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    width: 70%;
+    float: left;
+    position: relative;
+    
+}
+
+.menu ul li{
+    color: gray;
+    display: inline-block;
+    margin-left: 20px;  
+    height: 50px;
+}
+
+.menu ul li:hover{
+    border-bottom: 1px solid dodgerblue;
+}
+
+.menu ul li a:hover{
+    color: dodgerblue;  
+}
+
+.menu ul li a{
+    font-family: "Nunito", sans-serif;
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.busca{
+    width:20%;
+    float: right;
+}
+
+.busca input{
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    background-image: url('../Imagens/search.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 7%;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.main-3{
+    margin: 0;
+    width: 100%;
+    height: 44rem;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.main-3::before{
+    width: 100%;
+    height:44rem;
+    content: '';
+    background-color: rgba(000, 000, 000, 0.4);
+    position: absolute;
+}
+
+.fundo-cabecalho{
+    position: absolute;
+    z-index: -1;
+}
+
+.fundo-cabecalho img{
+    width: 100%;
+    height: auto;
+}
+
+.texto-cabecalho{
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 100%;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    
+}
+
