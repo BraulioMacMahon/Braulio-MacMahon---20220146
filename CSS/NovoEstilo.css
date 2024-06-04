@@ -3,6 +3,30 @@
     padding: 0%;
 }
 
+.separador{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../Imagens/separador1.png);
+    background-repeat: no-repeat;
+    background-position-y: -1%;
+    z-index: 1;
+    margin: 0%;
+    padding: 0px! important;
+   
+}
+
+.separador-2{
+    width: 100%;
+    height: 20%;
+    position:absolute;
+    background-image: url(../Imagens/separador2.png);
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0px! important;
+    background-position-y: -3%;
+}
+
 ul{
     padding: 0px! important;
 }
@@ -10,13 +34,11 @@ ul{
 body{
     width: 100%;
     height: 100%;
-    background-color: white;
 }
 
 main {
     margin: 0 auto;
-    width: 980px;
-    position: relative;
+    width: 100%;
 }
 
 .menu-principal {
@@ -29,12 +51,16 @@ main {
 
 }
 
+.header-1{
+   width: 80%;
+   
+}
+
 .icones ul li{
     list-style: none;
     display: inline;
     padding: 0.5%;
     float: right;
-    
 }
 
 .icones ul li a img{
@@ -53,7 +79,7 @@ main {
     width: 60%;
     margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    padding: 1.5%;
 }
 
 .logo{
@@ -69,19 +95,16 @@ main {
 .menu{
     width: 70%;
     float: left;
-    position: relative;
-    
 }
 
 .menu ul li{
     color: gray;
     display: inline-block;
-    margin-left: 20px;  
-    height: 50px;
+    margin-left: 4%;  
 }
 
 .menu ul li:hover{
-    border-bottom: 1px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
 }
 
 .menu ul li a:hover{
@@ -116,39 +139,142 @@ main {
 .main-3{
     margin: 0;
     width: 100%;
-    height: 44rem;
+    height: auto;
     position: relative;
     align-items: center;
     justify-content: space-between;
     align-items: center;
- 
-}
-
-.main-3::before{
-    width: 100%;
-    height:44rem;
-    content: '';
-    background-color: rgba(000, 000, 000, 0.4);
-    position: absolute;
-}
-
-.fundo-cabecalho{
-    position: absolute;
-    z-index: -1;
-}
-
-.fundo-cabecalho img{
-    width: 100%;
-    height: auto;
-}
-
-.texto-cabecalho{
-    font-family: "Nunito", sans-serif;
-    color: white;
-    font-size: 100%;
-    position: relative;
-    top: 250px;
-    text-align: center;
     
+}
+
+
+.slider-cabecalho img{
+    width: 100%;
+    
+
+}
+
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 20px;
+    height: 40px;
+    background: transparent;
+    z-index: 1;
+    position: absolute;
+    background-image: url("../Imagens/seta_Anterior.png");
+    background-repeat: no-repeat;
+    left: 5%;
+    top: 45%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 20px;
+    height: 40px;
+    background: transparent;
+    z-index: 1;
+    position: absolute;
+    background-image: url("../Imagens/seta_proximo.png");
+    background-repeat: no-repeat;
+    bottom: 47.5%;
+    left: 93%;
+}
+
+.slick-dots li button{
+    font-size: 0%;
+    border: 2px solid rgb(185, 185, 185);
+    background-color: transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  
+    
+}
+
+
+
+.slick-dots{
+    width: 10%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    
+    
+}
+
+.slick-dots li{
+    display: inline-block;
+    padding: 5%;
+    
+}
+
+li.slick-active button{
+    background-color:dodgerblue;
+}
+
+.main-4{
+    margin: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    color: rgb(109, 109, 109);
+    font-size: 18px;
+    background-color: aqua;
+}
+
+.chape-1{
+    width: 10%;
+    position: relative;
+    top: -15%;
+    
+}
+
+.rar-1{
+    margin: 0;
+    width: 90%;
+    position: relative;
+    top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.texto-1{
+    width: 60%;
+    text-align: justify;
+    position: relative;
+    float: left;
+    padding-top:5% ;
+}
+.texto-1 h1{
+    width: 100%;
+    font-weight: bold;
+}
+.pc{
+    width: 35%;
+    position: relative;
+    right: 4%;
+    float: right;
+    padding-top: 10%;
+    padding-left: 0%;
+    
+}
+.pc img{
+    width: 100%;
+}
+
+.main-5{
+    
+    background-color: bisque;
 }
 

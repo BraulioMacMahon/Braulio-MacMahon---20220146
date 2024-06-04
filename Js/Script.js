@@ -1,3 +1,19 @@
+$('.slider-cabecalho').slick({
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    fade: false,
+    autoplay: true,
+    autoplaySpeed:4000,
+    cssEase: 'linear',
+    slidesToScroll: 1
+
+});
+
+
+
+/*
 document.addEventListener("DOMContentLoaded", function() {
     // Adiciona a classe "visible" ao menu após um pequeno atraso
     setTimeout(function() {
@@ -109,4 +125,4 @@ var observer = new IntersectionObserver(function(entries) {
 }, { threshold: 0.5 }); 
 
 observer.observe(objeto2);
-
+*/
