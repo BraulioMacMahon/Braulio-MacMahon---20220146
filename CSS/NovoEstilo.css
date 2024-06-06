@@ -5,12 +5,12 @@
 
 .separador{
     width: 100%;
-    height: 100%;
+    height: 10%;
     position: absolute;
     background-image: url(../Imagens/separador1.png);
     background-repeat: no-repeat;
-    background-position-y: -1%;
-    z-index: 1;
+    background-position-y: 15%;
+    z-index: 99;
     margin: 0%;
     padding: 0px! important;
    
@@ -18,13 +18,27 @@
 
 .separador-2{
     width: 100%;
-    height: 20%;
+    height: 14%;
     position:absolute;
     background-image: url(../Imagens/separador2.png);
     background-repeat: no-repeat;
+    background-position-y: -20%;
+    z-index: 99;
     margin: 0%;
     padding: 0px! important;
-    background-position-y: -3%;
+    
+}
+
+.separador-rodape{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    background-image: url(../Imagens/separador_rodape.png);
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+    z-index: 99;
+   
+    
 }
 
 ul{
@@ -95,20 +109,25 @@ main {
 .menu{
     width: 70%;
     float: left;
+    
 }
 
 .menu ul li{
     color: gray;
     display: inline-block;
     margin-left: 4%;  
+    
 }
 
 .menu ul li:hover{
     border-bottom: 2px solid dodgerblue;
+    
 }
 
 .menu ul li a:hover{
-    color: dodgerblue;  
+    color: dodgerblue;
+    position: relative;
+    bottom: 2px;
 }
 
 .menu ul li a{
@@ -231,6 +250,7 @@ li.slick-active button{
     
 }
 
+
 .chape-1{
     width: 10%;
     position: relative;
@@ -274,7 +294,105 @@ li.slick-active button{
 }
 
 .main-5{
-    
-    background-color: bisque;
+    width: 100%;
+    height: 45rem;
+    font-family: "Nunito", sans-serif;
+    color: rgb(109, 109, 109);
+    font-size: 18px;
 }
+.rar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 200px;
+    position: relative;
+}
+
+.chape{
+    float: right;
+    position: relative;
+    top: 240px;
+}
+
+
+.texto{
+    float: left;
+    position: relative;
+    left: 15%;
+}
+
+.botao-banner{
+    width: 25%;
+    display: flex; 
+    position: absolute;
+    top: 122rem;
+    left: 40%;
+}
+.botao-banner button{
+    padding: 1rem 5rem 1rem 5rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    background-color: dodgerblue;
+    border-radius: 2rem;
+    border: none;
+    z-index: 1;
+}
+
+.main-6{
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    color: rgb(109, 109, 109);
+}
+.txt-2{
+    width: 50%;
+    position: relative;
+    top: 75px;
+    font-size: 18px;
+    left: 15%;
+}
+.colaboradores{
+    width: 60%;
+    height: 15rem;
+    top: 180px;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+}
+.imetro {   
+   
+    left: 25%;
+    text-align: center;
+}
+.tts {   
+    text-align: center;
+}
+.adeima {   
+    
+    right: 25%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.rodape{
+    background-color: aqua;
+    background-image: url(../Imagens/imagemFundo_rodape.png);
+    font-family: "Nunito", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 32.96rem;
+    align-items: center;
+}
+
+
+
 

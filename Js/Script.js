@@ -5,7 +5,7 @@ $('.slider-cabecalho').slick({
     slidesToShow: 1,
     fade: false,
     autoplay: true,
-    autoplaySpeed:4000,
+    autoplaySpeed:3000,
     cssEase: 'linear',
     slidesToScroll: 1
 
